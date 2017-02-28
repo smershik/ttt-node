@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div.container
+        h3#header1 Tic tac toe node - #{name} (you)
+        div.game-container
+            div.row
+                div.game-cell.col-xs-2.col-sm-2.col-md-2.col-lg-2#game-cell-1.btn-default(cell-number=1)
+                div.game-cell.col-xs-2.col-sm-2.col-md-2.col-lg-2#game-cell-2.btn-default(cell-number=2)
+                div.game-cell.col-xs-2.col-sm-2.col-md-2.col-lg-2#game-cell-3.btn-default(cell-number=3)
+            div.row
+                div.game-cell.col-xs-2.col-sm-2.col-md-2.col-lg-2#game-cell-4.btn-default(cell-number=4)
+                div.game-cell.col-xs-2.col-sm-2.col-md-2.col-lg-2#game-cell-5.btn-default(cell-number=5)
+                div.game-cell.col-xs-2.col-sm-2.col-md-2.col-lg-2#game-cell-6.btn-default(cell-number=6)
+            div.row
+                div.game-cell.col-xs-2.col-sm-2.col-md-2.col-lg-2#game-cell-7.btn-default(cell-number=7)
+                div.game-cell.col-xs-2.col-sm-2.col-md-2.col-lg-2#game-cell-8.btn-default(cell-number=8)
+                div.game-cell.col-xs-2.col-sm-2.col-md-2.col-lg-2#game-cell-9.btn-default(cell-number=9)
+        p#game-status
+    script.
+        let name = '#{name}'
+    script(src='/javascripts/client.js')

@@ -1,0 +1,49 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.game-container{
+    margin:10px;
+}
+
+.row{
+    min-width:300px;
+}
+
+.turn-x{
+    background: url('/images/x.png') no-repeat;
+    background-size: cover;
+}
+
+.turn-o{
+    background: url('/images/o.png') no-repeat;
+    background-size: cover;
+
+}
+
+.game-cell {
+    display: inline-block;
+    padding-top:15%;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+

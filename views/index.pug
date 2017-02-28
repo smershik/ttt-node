@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    div.container
+        h2 Tic-tac-toe node.js
+        form(method='GET' action='/gamefield')
+            p
+                input(type="text" name='name' placeholder="Input your name")
+                input(type='submit' value = 'Play')
+    script(src='/javascripts/home.js')
+    
